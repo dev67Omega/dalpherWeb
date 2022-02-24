@@ -1,0 +1,154 @@
+/* Dalpher Estilos */
+/* 2022 Elaborado por: Daniel Garcia */
+/* Package CSS.styles.css */
+/* Version 1.0 */
+/* Copyright Dalpher */
+
+/* Estilos Generales */
+body{
+    letter-spacing: 2px;
+    background: rgba(250, 250, 250, 0.877);
+}
+
+.row{
+    padding: 15px;
+}
+
+.container{
+    padding: 5px;
+}
+
+/* Div que se ocupa para hacer el ancho scrollspy */
+.containerDivisor{
+    padding: 15px;
+}
+
+.container-fluid{
+    padding: 25px;
+}
+
+h3{
+    font-size: 40px;
+    border-left:4px solid #353f52;
+    padding-left: 10px;
+}
+
+/* Estilos por Seccion */
+/* ******************* */
+
+/* Slider / Carousel */
+.carousel{
+    margin-top: 56px;;
+}
+
+.imgBanne{
+    margin-top: 60px;
+}
+
+
+
+
+.subTitle{
+    font-size: 25px;
+    color: #5c6e91;
+}
+
+.subTitleServices{
+    color: #102f81;
+}
+
+.card{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.bannerBck{
+    background: #353f52;
+    color: aliceblue;
+}
+
+.textBanner{
+    font-size: 20px;
+}
+
+iframe{
+    margin-top: 60px;
+}
+
+/* MEDIA QUERIES SECTION */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (max-width: 1400px) {
+    .imgBanne{
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+
+    .containerDivisor{
+        padding: 10px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    .imgBanne{
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+
+    .containerDivisor{
+        padding: 10px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+    .imgBanne{
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+
+    .containerDivisor{
+        padding: 10px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+    .imgBanne{
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+
+    .containerDivisor{
+        padding: 10px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+    .imgBanne{
+        margin-top: 20px;
+    }
+
+    .containerDivisor{
+        padding: 10px;
+    }
+}
