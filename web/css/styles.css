@@ -11,6 +11,10 @@ body{
     background: rgba(250, 250, 250, 0.877);
 }
 
+.carousel-item img{
+    
+}
+
 .row{
     padding: 15px;
 }
