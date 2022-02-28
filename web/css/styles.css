@@ -74,11 +74,20 @@ h3{
 }
 
 .subTitle {
+    width: 100%;
     font-size: 25px;
     color: #5c6e91;
-    display: inline-flex;
 }
 
+.subTitle svg, .subTitle p{
+    text-align: center;
+    display: block;
+}
+
+.subTitle svg{
+    margin-left: auto;
+    margin-right: auto }
+}
 
 .subTitleServices{
     color: #102f81;
@@ -156,6 +165,12 @@ iframe{
 
 /* // Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
+
+    .subTitle svg, .subTitle p{
+        text-align: left;
+        display: inline;
+    }
+
     .imgBanne{
         margin-top: 20px;
     }
@@ -176,14 +191,11 @@ iframe{
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
 
-    .subTitle{
-        display: block;
-    }
-
-    .subTitle p{
+    .subTitle svg, .subTitle p{
         text-align: left;
+        display: inline;
     }
-
+    
     .imgBanne{
         margin-top: 20px;
     }
