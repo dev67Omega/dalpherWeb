@@ -17,17 +17,30 @@
 
 
 /*Se importa fuente MONTSERRAT*/
-@import url('../src/fonts/Montserrat/static/Montserrat-Regular.ttf');
 
 
+@font-face {
+    font-family: monserratRegular;
+    src: url(../src/fonts/Montserrat/static/Montserrat-Regular.ttf);
+  }
+  
+@font-face {
+    font-family: monserratSemiBold;
+    src: url(../src/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+  }
+  
+@font-face {
+    font-family: monserratBold;
+    src: url(../src/fonts/Montserrat/static/Montserrat-Bold.ttf);
+  }
+  
 body{
     letter-spacing: 2px;
     background: rgba(250, 250, 250, 0.877);
 }
 
 p{
-    font-family: "Montserrat Regular", "Monserrat",Sans-serif;
-    font-weight: 200;
+    font-family: monserratRegular;
 }
 
 /*Cambia el color predefinido de los elementos del menu(navbar)*/
@@ -54,11 +67,11 @@ a:hover{
 }
 
 .container a{
-    font-weight: 600;
+    font-family: monserratSemiBold;
 }
 
 .container h1, h2, h3, h4, h5, h6{
-    font-weight: 600;
+    font-family: monserratBold;
 }
 
 /*Clase universal que declara colores indicados para los botones*/
