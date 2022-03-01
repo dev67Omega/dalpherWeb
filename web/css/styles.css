@@ -19,14 +19,6 @@ body{
     background: rgba(250, 250, 250, 0.877);
 }
 
-/*
-MODIFICAR BCK Y BORDER PARA LOS 
-SIGS ELEMENTOS
-NAVBAR
-BUTTONS
-H3 Y BORDER
-ICONS, MISION, VISION, POLITICAS
-*/
 
 /*Cambia el color predefinido de los elementos del menu(navbar)*/
 .navbar{
@@ -63,26 +55,13 @@ a:hover{
 }
 
 /*Clase que declara colores claros en un boton cuando se halle en fondo oscuro*/
-.btnLight{
-    border-radius: 10px 0px 10px 0px;
-    color: #203649;
-    background-color:white;
-    border: solid 1px #203649;
-}
-
-.btnLight:hover{
-    color: white;
-    background-color: #203649;
-    border: solid 1px #203649;
-}
-
 
     /*Selector para video en carousel ajustando un tamaño idóneo para encajar con el resto de elementos*/
 #thyVideo{
     width:100%;
     height: 450px;
-    boder: 0px;
-    mar: 0px;
+    border: 0px;
+    margin: 0px;
     }
 
 /*Esta clase declara que los ícones de redes sociales tengan un color blanco, un tamaño de 24px y un margen de 5px 
@@ -92,7 +71,6 @@ entre ellos con excepción del margen izquierdo */
     width: 24px;
     height: 24px;
     margin: 5px 5px 5px 0px;
-    border: ;
 }
 
 /*Cambia el color de los inconos de redes sociales a amarillo cuando el cursor se situa sobre ellos*/
@@ -142,10 +120,6 @@ h3{
     padding-left: 10px;
 }
 
-.headerLight{
-    border-left:4px solid white;
-}
-
 /* Estilos por Seccion */
 /* ******************* */
 
@@ -192,7 +166,17 @@ h3{
 
 /*Se editó esta clase para coincidir con el color solicitado*/
 .bannerBck{
-    background-color: #203649;;
+    background-color: #e19400;
+    color: aliceblue;
+}
+
+/*Se agrega esta clase para que el color de borde izquierdo concida con el de de h3*/
+.bannerBck h3{
+    border-left:4px solid aliceblue;
+}
+
+.bannerBottom{
+    background-color: #203649;
     color: aliceblue;
 }
 
