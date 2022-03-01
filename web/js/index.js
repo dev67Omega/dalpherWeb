@@ -2,7 +2,33 @@
 function closeMenu() {
     var element = document.getElementById("navbarSupportedContent");
     element.classList.remove("show");
+
+    var element2 = document.getElementById("navbarSupportedContent");
+    element2.classList.remove("active");
+
+    var element3 = document.getElementById("navbarSupportedContent");
+    element3.classList.add("");
 }
+
+//Declaramos el boton en una variable:
+topbutton = document.getElementById("topBtn");
+
+// Cuando el usuario se desplace a tantos pixeles, se habilita el boton
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+
+// Cuando se de click en el boton nos lleva al tope
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+} 
 
 
 /*

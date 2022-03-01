@@ -19,23 +19,23 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navLink">
                 <li onclick="closeMenu();" class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li onclick="closeMenu();" class="nav-item">
+                <li onclick="closeMenu();" class="nav-item" id="navLink">
                     <a class="nav-link" href="#about">Conocenos</a>
                 </li>
-                <li onclick="closeMenu();" class="nav-item">
+                <li onclick="closeMenu();" class="nav-item" id="navLink">
                     <a class="nav-link"  href="#services">Servicios</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Catálogo</a>
                 </li> -->
-                <li onclick="closeMenu();" class="nav-item">
+                <li onclick="closeMenu();" class="nav-item" id="navLink">
                   <a class="nav-link" href="#certifications">Certificaciones</a>
                  </li>
-                <li onclick="closeMenu();" class="nav-item">
+                <li onclick="closeMenu();" class="nav-item" id="navLink">
                     <a class="nav-link" href="#contact">Contacto</a>
                 </li>
               <!-- <li class="nav-item dropdown">
@@ -128,6 +128,13 @@
               100% de importación, distinguiéndonos por ofrecer y dar el servicio más eficiente.</p>
               <button type="button" class="btn">Ver Servicios</button>
           </div>
+
+          <a onclick="topFunction()" class="button" id="topBtn" title="Regresar a arriba">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+          </a> 
+
           <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img src="src/imgs/s1.jpg" class="d-block w-100 img-fluid imgBanne" alt="">
           </div>
@@ -169,6 +176,7 @@
           </div>
         </div>
       </div>
+
       <div class="container-fluid bannerBck" >
         <div class="container">
           <div class="column text-center">
