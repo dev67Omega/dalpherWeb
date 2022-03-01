@@ -1,3 +1,10 @@
+/*función que permite, en modo mobile, contraer el menu cuando se da un click sobre alguno de sus elementos*/
+function closeMenu() {
+    var element = document.getElementById("navbarSupportedContent");
+    element.classList.remove("show");
+}
+
+
 /*
  AngularJS v1.8.2
  (c) 2010-2020 Google LLC. http://angularjs.org

@@ -5,33 +5,114 @@
 /* Version 1.0 */
 /* Copyright Dalpher */
 
+
+/* Dalpher Estilos */
+/* 2022 Editado por: Miguel Bojorge */
+/* Package CSS.styles.css */
+/* Version 1.0 */
+/* Copyright Dalpher */
+
+
 /* Estilos Generales */
 body{
     letter-spacing: 2px;
     background: rgba(250, 250, 250, 0.877);
 }
 
+/*
+MODIFICAR BCK Y BORDER PARA LOS 
+SIGS ELEMENTOS
+NAVBAR
+BUTTONS
+H3 Y BORDER
+ICONS, MISION, VISION, POLITICAS
+*/
 
+/*Cambia el color predefinido de los elementos del menu(navbar)*/
+.navbar{
+    color: white;
+    background-color: #203649;
+}
+
+
+/*los links tendran el color de acuerdo al tema del sitio*/
+a{
+    color: #203649;
+    text-decoration: none;
+}
+
+/*crea un efecto tipo "rollOver" que cambia el invierte el color del elemento cuando el cursor se situa sobre él*/
+a:hover{
+    color: white;
+    background-color: #203649;
+}
+
+
+/*Clase universal que declara colores indicados para los botones*/
+.btn{
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+    background-color: #203649;
+    border: solid 1px #203649;
+}
+
+.btn:hover{
+    color: #203649;
+    background-color: white;
+    border: solid 1px #203649;
+}
+
+/*Clase que declara colores claros en un boton cuando se halle en fondo oscuro*/
+.btnLight{
+    border-radius: 10px 0px 10px 0px;
+    color: #203649;
+    background-color:white;
+    border: solid 1px #203649;
+}
+
+.btnLight:hover{
+    color: white;
+    background-color: #203649;
+    border: solid 1px #203649;
+}
+
+
+    /*Selector para video en carousel ajustando un tamaño idóneo para encajar con el resto de elementos*/
+#thyVideo{
+    width:100%;
+    height: 450px;
+    boder: 0px;
+    mar: 0px;
+    }
+
+/*Esta clase declara que los ícones de redes sociales tengan un color blanco, un tamaño de 24px y un margen de 5px 
+entre ellos con excepción del margen izquierdo */
 .socialIcon{
     color: white;
     width: 24px;
     height: 24px;
     margin: 5px 5px 5px 0px;
+    border: ;
 }
 
+/*Cambia el color de los inconos de redes sociales a amarillo cuando el cursor se situa sobre ellos*/
 .socialIcon :hover{
     color: yellow;
 }
 
+/* Declara una margen en de 50px en cada sección para facilitar su legibilidad y eitar que el menú se sobreponga 
+en su contenido*/
 .topSpace{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
+/*Esta clase no puede ser convertida a formato camel ya que viene predefinida por el CDN de bootstrap*/
 .carousel-caption{
     position: absolute;
     top: 35%;
     text-align: center;
 }
+
 
 .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption p{
     color: white;
@@ -61,6 +142,10 @@ h3{
     padding-left: 10px;
 }
 
+.headerLight{
+    border-left:4px solid white;
+}
+
 /* Estilos por Seccion */
 /* ******************* */
 
@@ -73,24 +158,31 @@ h3{
     margin-top: 60px;
 }
 
+/*Indetificador usado para añadir padding a los elementos requeridos con el fin de mejorar su lectura y visibilidad*/
+#paddingTop{    
+    padding: 30px 10px 20px 10px;
+}
+
 .subTitle {
     width: 100%;
     font-size: 25px;
-    color: #5c6e91;
+    color: #203649;
 }
 
+/* Declara que elementos entro de la clase subTitle se alinien en bloque (uno sobre otro) y de manera centrada*/
 .subTitle svg, .subTitle p{
     text-align: center;
     display: block;
 }
 
+/* Declara que los elementos svg dentro de la clase subTitle se centren exactamente dentro del  contenedor*/
 .subTitle svg{
     margin-left: auto;
     margin-right: auto;
 }
 
 .subTitleServices{
-    color: #102f81;
+    color: #203649;
 }
 
 .card{
@@ -98,8 +190,9 @@ h3{
     border: 1px solid rgba(0, 0, 0, 0.171);
 }
 
+/*Se editó esta clase para coincidir con el color solicitado*/
 .bannerBck{
-    background: #353f52;
+    background-color: #203649;;
     color: aliceblue;
 }
 
@@ -120,9 +213,7 @@ iframe{
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media screen and (max-width: 1400px) {
-    .imgBanne{
-        margin-top: 20px;
-    }
+
 
     h3{
         font-size: 27px;
@@ -135,9 +226,7 @@ iframe{
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
-    .imgBanne{
-        margin-top: 20px;
-    }
+
 
     h3{
         font-size: 27px;
@@ -150,9 +239,7 @@ iframe{
 
 /* // Large devices (desktops, 992px and up) */
 @media screen and (max-width: 992px) {
-    .imgBanne{
-        margin-top: 20px;
-    }
+
 
     h3{
         font-size: 27px;
@@ -166,6 +253,8 @@ iframe{
 /* // Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
 
+    /* Declara que los elementos dentro de esta clase se alinien de modo horizontal en
+    vista mobile en 768px*/
     .subTitle svg, .subTitle p{
         text-align: left;
         display: inline;
@@ -183,14 +272,26 @@ iframe{
         padding: 10px;
     }
 
-    .btn {
+    /* Declara que botones ocupen el 100% de espacio en modo mobile de 768px*/
+    .btn, .btnLight {
         width: 100%;
+    }
+
+
+    /* Clase adicionada al Iframe utilizada para Google Maps utilizando el 100% de ancho, 
+    altura de 550px sin borde y un margen superior de 30px en vista mobile de 768px*/
+    .thyFrame{
+        width: 100%; 
+        height: 550px;
+        border: 0px;
+        margin: 30px 0px 0px 0px;
     }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
 
+    /* Declara que los elementos dentro de esta clase se alinien de modo horizontal en vista mobile en 576px*/
     .subTitle svg, .subTitle p{
         text-align: left;
         display: inline;
@@ -204,11 +305,13 @@ iframe{
         padding: 10px;
     }
 
-    .btn {
+    /* Declara que botones ocupen el 100% de espacio en modo mobile de 576px*/
+    .btn, .btnLight {
         width: 100%;
     }
 
-
+    /* Clase adicionada al Iframe utilizada para Google Maps utilizando el 100% de ancho, altura de 550px sin borde 
+    y un margen superior de 30px en vista mobile de 576px*/
     .thyFrame{
         width: 100%; 
         height: 550px;
