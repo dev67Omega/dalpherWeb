@@ -1,9 +1,5 @@
 /*función que permite, en modo mobile, contraer el menu cuando se da un click sobre alguno de sus elementos*/
 function closeMenu() {
-<<<<<<< HEAD
-    var element = document.getElementById("navbarSupportedContent");
-    element.classList.remove("show");
-=======
   var element = document.getElementById("navbarSupportedContent");
   element.classList.remove("show");
 
@@ -12,7 +8,6 @@ function closeMenu() {
 
   var element3 = document.getElementById("navbarSupportedContent");
   element3.classList.add("");
->>>>>>> fcdc87e09e0e08df5e4a200a4399d842cc1313f4
 }
 
 //Declaramos el boton en una variable:
@@ -31,13 +26,8 @@ if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
 
 // Cuando se de click en el boton nos lleva al tope
 function topFunction() {
-<<<<<<< HEAD
   document.body.scrollTop = 10; // For Safari
   document.documentElement.scrollTop = 10; // Para Chrome, Firefox, IE y Opera
-=======
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
->>>>>>> fcdc87e09e0e08df5e4a200a4399d842cc1313f4
 } 
 
 
