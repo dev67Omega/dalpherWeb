@@ -1,7 +1,18 @@
 /*función que permite, en modo mobile, contraer el menu cuando se da un click sobre alguno de sus elementos*/
 function closeMenu() {
+<<<<<<< HEAD
     var element = document.getElementById("navbarSupportedContent");
     element.classList.remove("show");
+=======
+  var element = document.getElementById("navbarSupportedContent");
+  element.classList.remove("show");
+
+  var element2 = document.getElementById("navbarSupportedContent");
+  element2.classList.remove("active");
+
+  var element3 = document.getElementById("navbarSupportedContent");
+  element3.classList.add("");
+>>>>>>> fcdc87e09e0e08df5e4a200a4399d842cc1313f4
 }
 
 //Declaramos el boton en una variable:
@@ -11,24 +22,29 @@ topbutton = document.getElementById("topBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    topbutton.style.display = "block";
-  } else {
-    topbutton.style.display = "none";
-  }
+if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  topbutton.style.display = "block";
+} else {
+  topbutton.style.display = "none";
+}
 }
 
 // Cuando se de click en el boton nos lleva al tope
 function topFunction() {
+<<<<<<< HEAD
   document.body.scrollTop = 10; // For Safari
   document.documentElement.scrollTop = 10; // Para Chrome, Firefox, IE y Opera
+=======
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+>>>>>>> fcdc87e09e0e08df5e4a200a4399d842cc1313f4
 } 
 
 
 /*
- AngularJS v1.8.2
- (c) 2010-2020 Google LLC. http://angularjs.org
- License: MIT
+AngularJS v1.8.2
+(c) 2010-2020 Google LLC. http://angularjs.org
+License: MIT
 */
 (function(z){'use strict';function ve(a){if(D(a))w(a.objectMaxDepth)&&(Xb.objectMaxDepth=Yb(a.objectMaxDepth)?a.objectMaxDepth:NaN),w(a.urlErrorParamsEnabled)&&Ga(a.urlErrorParamsEnabled)&&(Xb.urlErrorParamsEnabled=a.urlErrorParamsEnabled);else return Xb}function Yb(a){return X(a)&&0<a}function F(a,b){b=b||Error;return function(){var d=arguments[0],c;c="["+(a?a+":":"")+d+"] http://errors.angularjs.org/1.8.2/"+(a?a+"/":"")+d;for(d=1;d<arguments.length;d++){c=c+(1==d?"?":"&")+"p"+(d-1)+"=";var e=encodeURIComponent,
 f;f=arguments[d];f="function"==typeof f?f.toString().replace(/ \{[\s\S]*$/,""):"undefined"==typeof f?"undefined":"string"!=typeof f?JSON.stringify(f):f;c+=e(f)}return new b(c)}}function za(a){if(null==a||$a(a))return!1;if(H(a)||C(a)||x&&a instanceof x)return!0;var b="length"in Object(a)&&a.length;return X(b)&&(0<=b&&b-1 in a||"function"===typeof a.item)}function r(a,b,d){var c,e;if(a)if(B(a))for(c in a)"prototype"!==c&&"length"!==c&&"name"!==c&&a.hasOwnProperty(c)&&b.call(d,a[c],c,a);else if(H(a)||
