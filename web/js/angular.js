@@ -1,36 +1,3 @@
-/*función que permite, en modo mobile, contraer el menu cuando se da un click sobre alguno de sus elementos*/
-function closeMenu() {
-  var element = document.getElementById("navbarSupportedContent");
-  element.classList.remove("show");
-
-  var element2 = document.getElementById("navbarSupportedContent");
-  element2.classList.remove("active");
-
-  var element3 = document.getElementById("navbarSupportedContent");
-  element3.classList.add("");
-}
-
-//Declaramos el boton en una variable:
-topbutton = document.getElementById("topBtn");
-
-// Cuando el usuario se desplace a tantos pixeles, se habilita el boton
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-  topbutton.style.display = "block";
-} else {
-  topbutton.style.display = "none";
-}
-}
-
-// Cuando se de click en el boton nos lleva al tope
-function topFunction() {
-  document.body.scrollTop = 10; // For Safari
-  document.documentElement.scrollTop = 10; // Para Chrome, Firefox, IE y Opera
-} 
-
-
 /*
 AngularJS v1.8.2
 (c) 2010-2020 Google LLC. http://angularjs.org
