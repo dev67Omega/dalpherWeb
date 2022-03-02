@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>Dalpher Manufacturas SA de CV</title>
     <!-- Required meta tags -->
@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="css/styles.css" >
 
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example2 " data-bs-offset="9" id="top">
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example2 " data-bs-offset="10" id="top">
 
     <nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-md">
-          <a class="navbar-brand" href="index.html">DALPHER</a>
+          <a class="navbar-brand" href="index.html">
+            <img src="src/imgs/logo.png">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,68 +62,29 @@
             </form> -->
           </div>
         </div>
-    </nav>
+      </nav>
 
-    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-      <!--
-        <div class="carousel-indicators">        
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>        
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        -->
-        <div class="carousel-inner">
-          
-          <div class="carousel-item active" data-bs-interval="11000">
-            <video id="thyVideo" autoplay loop muted>
-                <source src="src/media/video.mp4" type="video/mp4">
-            </video>
-            <!---
-            <div class="carousel-caption d-none d-md-block">
-              <h1>DALPHER</h1>
-              <p>MANOFACTURAS</p>
+      <header>   
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="src/media/video.mp4" type="video/mp4">
+        </video>
+    
+        <!-- The header content -->
+          <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <!--
+              <div class="w-100 text-white">
+                <h1 class="display-3">DALPHER</h1>
+                <p class="lead mb-0">MANUFACTURAS</p>
+              </div>
+              -->
             </div>
-          -->
           </div>
+      </header>
 
-          <div class="carousel-item " data-bs-interval="6000">
-            <img src="src/imgs/s1.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>DALPHER</h1>
-              <p>MANUFACTURAS</p>
-            </div>
-          </div>
-        
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="src/imgs/s2.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>LA MAS ALTA CALIDAD</h5>
-              <p>PRODUCCION DE CLASE MUNDIAL</p>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="6000">
-            <img src="src/imgs/s3.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>EXTENSA VARIEDAD DE PRODUCTOS</h5>
-              <p>CONTAMOS CON UN AMPLIO Y VARIADO CATALOGO</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <div class="container containerDivisor" id="about" >
+      <div class="container containerDivisor" id="about">
       </div>
-
 
       <div class="container">
         <div class="row">
@@ -143,7 +106,51 @@
           </a> 
 
           <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img src="src/imgs/s1.jpg" class="d-block w-100 img-fluid imgBanne" alt="">
+
+            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+              <!--
+                <div class="carousel-indicators">        
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>        
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="6000">
+                    <img src="src/imgs/s1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1>DALPHER</h1>
+                      <p>MANUFACTURAS</p>
+                    </div>
+                  </div>
+                
+                  <div class="carousel-item" data-bs-interval="6000">
+                    <img src="src/imgs/s2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>LA MAS ALTA CALIDAD</h5>
+                      <p>PRODUCCION DE CLASE MUNDIAL</p>
+                    </div>
+                  </div>
+        
+                  <div class="carousel-item" data-bs-interval="6000">
+                    <img src="src/imgs/s3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>EXTENSA VARIEDAD DE PRODUCTOS</h5>
+                      <p>CONTAMOS CON UN AMPLIO Y VARIADO CATALOGO</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
           </div>
         </div>
         <div class="row" class="text-center">
@@ -410,7 +417,6 @@
           </p>
         </div>
       </div>
-    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
