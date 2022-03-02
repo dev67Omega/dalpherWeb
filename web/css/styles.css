@@ -156,7 +156,6 @@ en su contenido*/
     width: 70px;
     height: 70px;
     color: #203649;
-
 }
 
 .row{
@@ -245,7 +244,10 @@ h3{
 }
 
 iframe{
-    margin-top: 60px;
+    margin: 30px 0px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
 }
 
 /* MEDIA QUERIES SECTION */
@@ -321,16 +323,6 @@ iframe{
     .btn, .btnLight {
         width: 100%;
     }
-
-
-    /* Clase adicionada al Iframe utilizada para Google Maps utilizando el 100% de ancho, 
-    altura de 550px sin borde y un margen superior de 30px en vista mobile de 768px*/
-    #thyFrame{
-        width: 50px; 
-        height: 500px;
-        border: 0px;
-        margin: 0px 0px 0px 0px;
-    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -356,12 +348,4 @@ iframe{
         width: 100%;
     }
 
-    /* Clase adicionada al Iframe utilizada para Google Maps utilizando el 100% de ancho, altura de 550px sin borde 
-    y un margen superior de 30px en vista mobile de 576px*/
-    .thyFrame{
-        width: 100%; 
-        height: 550px;
-        border: 0px;
-        margin: 30px 0px 0px 0px;
-    }
 }
