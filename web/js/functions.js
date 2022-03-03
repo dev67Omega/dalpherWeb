@@ -42,9 +42,9 @@ app.controller('loginController', ['$scope', '$filter', function ($scope, $filte
 
 
 app.filter('startFrom', function() {
-    return function(input, start) {
+    return function(start) {
         start = +start; //parse to int
-        return input.slice(start);
+        return slice(start);
     }
 });
 
@@ -64,18 +64,19 @@ function closeMenu() {
     element3.classList.add("");
   }
   
-  //Declaramos el boton en una variable:
-  topbutton = document.getElementById("topBtn");
-  
   // Cuando el usuario se desplace a tantos pixeles, se habilita el boton
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {
+    
+    scrollFunction()};
   
   function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    topbutton.style.display = "block";
-  } else {
-    topbutton.style.display = "none";
-  }
+    var topbutton = document.getElementById("topBtn");
+
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      topbutton.style.display = "block";
+    } else {
+      topbutton.style.display = "none";
+    }
   }
   
   // Cuando se de click en el boton nos lleva al tope
