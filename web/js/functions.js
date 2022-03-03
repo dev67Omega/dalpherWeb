@@ -1,5 +1,14 @@
    
-var app = angular.module('myApp', []);
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "src/sites/content.html"
+    })
+    .when("/servCat", {
+        templateUrl : "src/sites/services.html"
+    })
+});
 app.controller('loginController', ['$scope', '$filter', function ($scope, $filter) {
     $scope.currentPage = 0;
     $scope.pageSize = 10;

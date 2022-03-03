@@ -1,0 +1,341 @@
+<nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <div class="container-md">
+    <a class="navbar-brand" href="index.html">
+      <img src="src/imgs/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navLink">
+          <li onclick="closeMenu();" class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#top">Inicio</a>
+          </li>
+          <li onclick="closeMenu();" class="nav-item" id="navLink">
+              <a class="nav-link" href="#about">Conocenos</a>
+          </li>
+          <li onclick="closeMenu();" class="nav-item" id="navLink">
+              <a class="nav-link"  href="#services">Servicios</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Catálogo</a>
+          </li> -->
+          <li onclick="closeMenu();" class="nav-item" id="navLink">
+            <a class="nav-link" href="#certifications">Certificaciones</a>
+            </li>
+          <li onclick="closeMenu();" class="nav-item" id="navLink">
+              <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+<header>   
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="src/media/video.mp4" type="video/mp4">
+  </video>
+
+  <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <!--
+        <div class="w-100 text-white">
+          <h1 class="display-3">DALPHER</h1>
+          <p class="lead mb-0">MANUFACTURAS</p>
+        </div>
+        -->
+      </div>
+    </div>
+</header>
+
+  <div class="container containerDivisor" id="about">
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="topSpace">Bienvenido a Dalpher</h3>
+      <p class="text-justify">Somos especialistas en la fabricación de Manejos de Botella, 
+        además de la fabricación de innumerables refacciones para la máquina que usted requiera, 
+        en nylón, poliuretano, polietileno, teflón, acero inoxidable y plásticos de ingeniería entre otros, 
+        para la industria embotelladora, cervecera y alimenticia, asegurándole que nuestros productos son 
+        elaborados con los más estrictos niveles de calidad y tecnología, además de ser fabricados con materiales 
+        100% de importación, distinguiéndonos por ofrecer y dar el servicio más eficiente.</p>
+        
+        <a class="btn " href="#!servCat" role="button">Ver Servicios</a>
+    </div>
+
+    <a onclick="topFunction()" class="button" id="topBtn" title="Regresar a arriba">
+
+    </a> 
+
+    <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+        <!--
+          <div class="carousel-indicators">        
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>        
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          -->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="6000">
+              <img src="src/imgs/s1.jpg" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>DALPHER</h1>
+                <p>MANUFACTURAS</p>
+              </div>
+            </div>
+          
+            <div class="carousel-item" data-bs-interval="6000">
+              <img src="src/imgs/s2.jpg" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>LA MAS ALTA CALIDAD</h5>
+                <p>PRODUCCION DE CLASE MUNDIAL</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="6000">
+              <img src="src/imgs/s3.jpg" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>EXTENSA VARIEDAD DE PRODUCTOS</h5>
+                <p>CONTAMOS CON UN AMPLIO Y VARIADO CATALOGO</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="row" class="text-center">
+    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      
+      <span class="subTitle">
+
+        <p>Misión</p>
+      </span>
+      <p class="text-justify">Satisfacer las necesidades de la industria embotelladora, cervecera, alimenticia,  
+        y de servicio en general en la fabricación e instalación de manejos de botella y refacciones a través de la 
+        planeación de soluciones y desarrollo de ingeniería</p>
+    </div>
+    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <span class="subTitle">
+
+      <p>Visión</p>
+    </span>
+      <p class="text-justify">Colocar a Dalpher Manufacturas 
+        como la empresa líder en la fabicación de manejos de botella y refacciones industriales 
+        a travéz del logro de altos estándares de calidad y servicio, logrando un incremeto en ventas que beneficie 
+        a los miembros de la organización.</p>
+    </div>
+    <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <span class="subTitle">
+
+      <p>Politicas de Calidad</p>
+    </span>
+      <p class="text-justify">La política de calidad de Dalpher es fabricar productos de alta calidad con el objetivo
+         primordial de satisfacer las necesidades de nuestros clientes, contando con ello con personal 
+         altamente calificado.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bannerBck" >
+  <div class="container">
+    <div class="column text-center">
+      <h3>Filosofia Dalpher</h3>
+      <p class="textBanner">Estamos convencidos de que nuestros clientes son la razón de ser de nuestra existencia, 
+        por lo tanto nos encontramos comprometidos con ellos en proporcionarles productos que cubran 
+        sus necesidades de producción en tiempo, a un precio justo y cumpliendo con los más altos estándares de calidad. 
+      </p> 
+      <button type="button" class="btn">Contactanos</button>
+    </div>
+  </div>
+</div>
+<div class="container containerDivisor" id="services">
+</div>
+<div class="container" >
+  <div class="row">
+    <div class="col-12">
+      <h3 class="topSpace">Servicios y Manufactura</h3>
+      <p class="text-left">
+        Contamos con máquinas tanto  convencionales, 
+        así como con los más modernos Centros de Maquinado de Control Numérico (CNC) 
+        habilitados para ser operados por los programas de CAD-CAM más confiables y actuales que hay en la industria; 
+        todo con el único propósito de  brindarle soluciones efectivas y prácticas a los precios más competitivos del 
+        mercado, garantizándole precisión, calidad y rapidez en la fabricación de todas nuestras piezas.</p>
+        <!-- <button type="button" class="btn btn-outline-success">Ver Servicios</button> -->
+    </div>
+  </div>
+  <div class="row" >
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="card text-justify">
+        <div class="card-body ">
+          <h5 class="card-title subTitleServices">
+
+            Moldeo de Poliuretano
+          </h5>
+          <p class="card-text">
+            Somos fabricantes de refacciones en diferentes durezas, con las propiedades químicas y 
+            colores requeridos para su empresa.
+          </p>
+          <button type="button" class="btn">Ver más</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="card text-justify">
+        <div class="card-body">
+          <h5 class="card-title subTitleServices">
+
+            Corte con Agua
+          </h5>
+          <p class="card-text">
+            Siendo los pioneros en México, ofrecemos este servicio con maquinaria actualizada, 
+            la cual cuenta con tecnología de punta capaz de cortar cualquier material en un espesor de hasta 6"
+          </p>
+          <button type="button" class="btn">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="card text-justify">
+        <div class="card-body ">
+          <h5 class="card-title subTitleServices">
+
+            Manejo de Botella
+          </h5>
+          <p class="card-text">
+            Desarrollamos formatos para llenadoras, taponadoras, empacadoras, 
+            desempacadoras, capsuladores y descapsuladores.
+          </p>
+          <button type="button" class="btn">Ver más</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="card text-justufy">
+        <div class="card-body ">
+          <h5 class="card-title subTitleServices">
+
+            Refacciones Industriales 
+          </h5>
+          <p class="card-text">
+            Fabricamos un sinfín de refacciones para su maquinaría, 
+            Articulaciones, Amortiguadores, Espreas entre otras refacciones más
+          </p>
+          <button type="button" class="btn">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="col-12">
+      <div class="card text-justify">
+        <div class="card-body ">
+          <h5 class="card-title subTitleServices">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>  -->
+            Plasticos de Ingeniería 
+          </h5>
+          <p class="card-text">
+            Contamos con una excelente opción de abastecimiento de plásticos de ingeniería, 
+            ofreciéndole materias primas de importación que le garantizan alta calidad y confianza. 
+          </p>
+          <button type="button" class="btn">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container containerDivisor" id="certifications">
+</div>
+<div class="container-fluid bannerBck">
+  <div class="container">
+    <div class="column text-center">
+      <h3 class="topSpace">Certificaciones Dalpher</h3>
+      <p class="textBanner">Somos una empresa mexicana con más de 30 años en la industria manufacturera, 
+        debido a la acertada combinación de experiencia, calidad y tecnología; hemos sido a lo largo de los años 
+        sinónimo de CALIDAD Y CONFIANZA.
+      </p> 
+      <button type="button" class="btn">Certificaciones y Recomendaciones</button>
+
+    </div>
+  </div>
+</div>
+<div class="container containerDivisor" id="contact">
+</div>
+<div class="container " >
+  <div class="row">
+    <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="topSpace">Contactanos</h3>
+      <p class=" textBanner">La comunicacion con nuestros clientes es escencial para el logro y 
+        satisfaccion de sus necesidades.
+      </p> 
+      <form>
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control" id="floatingWork" >
+          <label for="floatingWork" >*Nombre</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input type="email" class="form-control" id="floatingWork" >
+          <label for="floatingWork" >*Correo Electronico</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control" id="floatingWork" >
+          <label for="floatingWork" >*Télefono</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control" id="floatingWork" >
+          <label for="floatingWork" >*Empresa</label>
+        </div>
+          <div class="mb-3 form-">
+            <textarea class="form-control" placeholder="*Comentarios" id="comments" style="height: 100px"></textarea>
+            <!-- <label for="comments">*Comentarios.</label> -->
+          </div>
+          <div id="emailHelp" class="form-text">Los campos con (*) son obliatorios.</div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Acepto terminos de <a href="src/pdfs/avisoPrivacidad.pdf" target="_blank">privacidad</a></label>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+    <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <iframe id="thyFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7528.363454494251!2d-98.98628332393422!3d19.36128239769933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e28f30e45595%3A0x1eced5db1feb2cb9!2sDalpher%20manufacturas%20sa%20de%20cv!5e0!3m2!1ses-419!2smx!4v1645123188340!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
