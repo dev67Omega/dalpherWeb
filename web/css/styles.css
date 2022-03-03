@@ -43,6 +43,8 @@ p, .bannerBck p{
     font-family: monserratRegular;
 }
 
+
+
 /*Cambia el color predefinido de los elementos del menu(navbar)*/
 .navbar{
     color: white;
@@ -53,23 +55,18 @@ p, .bannerBck p{
     border:solid 0px 0px 1px 0px #e19400
 }
 
-
-
-
 /*los links tendran el estilo de acuerdo al tema del sitio*/
-container a{
+.container a{
     color: #203649;
     text-decoration: none;
+    font-family: monserratSemiBold;
 }
 
 /*crea un efecto tipo "rollOver" que cambia el invierte el color del elemento cuando el cursor se situa sobre él*/
-a:hover{
+.container a:hover{
     text-decoration: underline;
 }
 
-.container a{
-    font-family: monserratSemiBold;
-}
 
 .container h1, h2, h3, h4, h5, h6{
     font-family: monserratBold;
@@ -87,6 +84,10 @@ a:hover{
     color: #203649;
     background-color: white;
 }
+
+.btnLight{
+    
+} 
 
 /*Usado para boto "hacia arriba"*/
 #topBtn{
@@ -174,6 +175,9 @@ h3{
     padding-left: 10px;
 }
 
+#noBorder{
+    border-left: none;
+}
 /* Estilos por Seccion */
 /* ******************* */
 
