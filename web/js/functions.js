@@ -1,28 +1,40 @@
    
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ['ngRoute','ui.bootstrap']);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "src/sites/content.html"
     })
     .when("/servCat", {
-        templateUrl : "src/sites/services.html"
+        templateUrl : "src/sites/services.html",
+        controller: 'loginController'
+
     })
 });
 app.controller('loginController', ['$scope', '$filter', function ($scope, $filter) {
-    $scope.currentPage = 0;
-    $scope.pageSize = 10;
+  
+  
+  $scope.curPage = 1,
+  $scope.itemsPerPage = 3,
+  $scope.maxSize = 5;
     
-    $scope.getData = function () {
-      return $filter('filter')($scope.services)
+    this.items = services;
+  
+  
+  $scope.numOfPages = function () {
+    return Math.ceil(services.length / $scope.itemsPerPage);
+    
+  };
+  
+    $scope.$watch('curPage + numPerPage', function() {
+    var begin = (($scope.curPage - 1) * $scope.itemsPerPage),
+    end = begin + $scope.itemsPerPage;
+    
+    $scope.filteredItems = services.slice(begin, end);
+  });
 
-    }
     
-    $scope.numberOfPages=function(){
-        return Math.ceil($scope.getData().length/$scope.pageSize);                
-    }
-    
-    $scope.services = [
+   var services = [
         {type:1, status:'a', category: 'Corte con Agua',name:'producto 1 de corte de agua'}, 
         {type:1, status:'a', category: 'Corte con Agua',name:'producto 2 de corte de agua'}, 
         {type:2, status:'a', category: 'Manejo de Botella',name:'producto 1 de manejo de botella'}, 
@@ -36,17 +48,11 @@ app.controller('loginController', ['$scope', '$filter', function ($scope, $filte
         {type:5, status:'a', category: 'Refacciones Industriales',name:'producto 2 de refacciones industriales'},
         {type:5, status:'a', category: 'Refacciones Industriales',name:'producto 3 de refacciones industriales'}
     ];
-    $scope.orderList = "category";
-    
+
+
 }]);
 
 
-app.filter('startFrom', function() {
-    return function(start) {
-        start = +start; //parse to int
-        return slice(start);
-    }
-});
 
 
 

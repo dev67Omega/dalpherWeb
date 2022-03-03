@@ -36,7 +36,7 @@
             }
         </style>
     </head>
-    <body ng-app="myApp" ng-controller="loginController" >
+    <body >
         <nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container-md">
               <a class="navbar-brand" href="../../index.html">
@@ -103,7 +103,7 @@
         </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-4" ng-model="searchName" ng-repeat="itemService in services  | filter:filterService  | startFrom:currentPage*pageSize | limitTo:pageSize | filter:searchName as result "  >
+                    <div class="col-4" ng-model="searchName" ng-repeat="itemService in filteredItems  | filter:filterService "  >
                         <div class="card" ng-show = "itemService != null" >
                             <img src="src/imgs/s1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -111,20 +111,17 @@
                             </div>
                         </div>
                     </div>
+
+        <div data-pagination="" data-num-pages="numOfPages()" 
+        data-current-page="curPage" data-max-size="maxSize" 
+        data-boundary-links="false" data-direction-links="false" 
+        data-num-pages="smallnumPages"></div>aqui
                 </div>
-                <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
-                    Previous
-                </button>
-                {{currentPage+1}}/{{result.length}}
-                <button ng-disabled="currentPage >= getData().length/pageSize - 1" ng-click="currentPage=currentPage+1">
-                    Next
-                </button>
             </div>
 
 
         </div> 
         <!-- <span>Number of notebooks: {{result.length}}</span>  -->
-
 
     </body>
 </html>
