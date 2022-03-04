@@ -80,7 +80,6 @@ p, .bannerBck p{
 /*Clase universal que declara colores indicados para los botones*/
 .btn, .card-body a{
     font-size: 12pt;
-    border-radius: 10px 0px 10px 0px;
     color: #ffffff;
     background-color: hsl(208, 39%, 21%);
     text-decoration: none;
@@ -128,7 +127,7 @@ entre ellos con excepción del margen izquierdo */
 
 /*Cambia el color de los inconos de redes sociales a amarillo cuando el cursor se situa sobre ellos*/
 .socialIcon :hover{
-    color: #dc9600;
+    color: #2b5f9b;
 }
 
 /* Declara una margen en de 50px en cada sección para facilitar su legibilidad y eitar que el menú se sobreponga 
@@ -202,20 +201,25 @@ h3{
 }
 
 /* Declara que elementos entro de la clase subTitle se alinien en bloque (uno sobre otro) y de manera centrada*/
-.subTitle svg, .subTitle p{
+.subTitle img, .subTitle p{
     text-align: center;
     display: block;
     margin: 10px 0px;
 }
 
 /* Declara que los elementos svg dentro de la clase subTitle se centren exactamente dentro del  contenedor*/
-.subTitle svg{
+.subTitle img{
     margin-left: auto;
     margin-right: auto;
 }
 
 .subTitleServices{
     color: #3765ae;
+}
+
+.subTitleServices img{
+    width: 16px;
+    height: 16px;
 }
 
 .card{
@@ -265,6 +269,7 @@ header {
 }
 
 header video {
+    margin-top: 59px;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -347,7 +352,7 @@ header .overlay {
 
     /* Declara que los elementos dentro de esta clase se alinien de modo horizontal en
     vista mobile en 768px*/
-    .subTitle svg, .subTitle p{
+    .subTitle img, .subTitle p{
         text-align: left;
         display: inline;
         margin: 10px 0px;
@@ -375,7 +380,7 @@ header .overlay {
 @media screen and (max-width: 576px) {
 
     /* Declara que los elementos dentro de esta clase se alinien de modo horizontal en vista mobile en 576px*/
-    .subTitle svg, .subTitle p{
+    .subTitle img, .subTitle p{
         text-align: left;
         display: inline;
         margin-top: 10px;
