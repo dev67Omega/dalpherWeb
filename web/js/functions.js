@@ -14,42 +14,59 @@ app.config(function($routeProvider) {
 app.controller('loginController', ['$scope', '$filter', function ($scope, $filter) {
   
   
-  $scope.curPage = 1,
-  $scope.itemsPerPage = 3,
-  $scope.maxSize = 5;
+  // $scope.curPage = 1,
+  // $scope.itemsPerPage = 3,
+  // $scope.maxSize = 5;
     
-    this.items = services;
+  //   this.items = services;
   
   
-  $scope.numOfPages = function () {
-    return Math.ceil(services.length / $scope.itemsPerPage);
+  // $scope.numOfPages = function () {
+  //   return Math.ceil(services.length / $scope.itemsPerPage);
     
-  };
+  // };
   
-    $scope.$watch('curPage + numPerPage', function() {
-    var begin = (($scope.curPage - 1) * $scope.itemsPerPage),
-    end = begin + $scope.itemsPerPage;
+  //   $scope.$watch('curPage + numPerPage', function() {
+  //   var begin = (($scope.curPage - 1) * $scope.itemsPerPage),
+  //   end = begin + $scope.itemsPerPage;
     
-    $scope.filteredItems = services.slice(begin, end);
-  });
+  //   $scope.filteredItems = services.slice(begin, end);
+  // });
 
     
-   var services = [
-        {type:1, status:'a', category: 'Corte con Agua',name:'producto 1 de corte de agua'}, 
-        {type:1, status:'a', category: 'Corte con Agua',name:'producto 2 de corte de agua'}, 
-        {type:2, status:'a', category: 'Manejo de Botella',name:'producto 1 de manejo de botella'}, 
-        {type:2, status:'a', category: 'Manejo de Botella',name:'producto 2 de manejo de botella'}, 
-        {type:3, status:'a', category: 'Moldeo de Poliuretano',name:'producto 1 de moldeo de poliuretano'}, 
-        {type:3, status:'a', category: 'Moldeo de Poliuretano',name:'producto 2 de moldeo de poliuretano'}, 
-        {type:4, status:'a', category: 'Plasticos de Ingenierías',name:'producto 1 de plastico de ingenierias'},
-        {type:4, status:'a', category: 'Plasticos de Ingenierías',name:'producto 2 de plastico de ingenierias'},
-        {type:5, status:'a', category: 'Refacciones Industriales',name:'producto 1 de refacciones industriales'},
-        {type:5, status:'a', category: 'Refacciones Industriales',name:'producto 2 de refacciones industriales'},
-        {type:5, status:'a', category: 'Refacciones Industriales',name:'producto 2 de refacciones industriales'},
-        {type:5, status:'a', category: 'Refacciones Industriales',name:'producto 3 de refacciones industriales'}
+  $scope.services = [
+        {"type":1, "status":'a', "category": 'Corte con Agua',"name":'producto 1 de corte de agua'}, 
+        {"type":1, "status":'a', "category": 'Corte con Agua',"name":'producto 2 de corte de agua'}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 1 de manejo de botella'}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 2 de manejo de botella'}, 
+        {"type":3, "status":'a', "category": 'Moldeo de Poliuretano',"name":'producto 1 de moldeo de poliuretano'}, 
+        {"type":3, "status":'a', "category": 'Moldeo de Poliuretano',"name":'producto 2 de moldeo de poliuretano'}, 
+        {"type":4, "status":'a', "category": 'Plasticos de Ingenierías',"name":'producto 1 de plastico de ingenierias'},
+        {"type":4, "status":'a', "category": 'Plasticos de Ingenierías',"name":'producto 2 de plastico de ingenierias'},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 1 de refacciones industriales'},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales'},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales'},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 3 de refacciones industriales'}
     ];
 
-
+    $scope.viewby = 8;
+    $scope.totalItems = $scope.services.length;
+    $scope.currentPage = 1;
+    $scope.itemsPerPage = $scope.viewby;
+    $scope.maxSize = 5; //Number of pager buttons to show
+  
+    $scope.setPage = function (pageNo) {
+      $scope.currentPage = pageNo;
+    };
+  
+    $scope.pageChanged = function() {
+      console.log('Page changed to: ' + $scope.currentPage);
+    };
+  
+  $scope.setItemsPerPage = function(num) {
+    $scope.itemsPerPage = num;
+    $scope.currentPage = 1; //reset to first paghe
+  }
 }]);
 
 
