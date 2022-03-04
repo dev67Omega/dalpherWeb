@@ -87,8 +87,6 @@ p, .bannerBck p{
     background-color: white;
 }
 
-
-
 /*Usado para boto "hacia arriba"*/
 #topBtn{
     width: 55px;
@@ -113,7 +111,6 @@ p, .bannerBck p{
     color: #fff;
   }
 
-/*Clase que declara colores claros en un boton cuando se halle en fondo oscuro*/
 
     /*Selector para video en carousel ajustando un tamaño idóneo para encajar con el resto de elementos*/
 #thyVideo{
@@ -311,7 +308,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url('') black no-repeat center center scroll;
   }
 
   header video {
