@@ -79,12 +79,6 @@ app.controller('loginController', ['$scope', '$filter', function ($scope, $filte
 function closeMenu() {
     var element = document.getElementById("navbarSupportedContent");
     element.classList.remove("show");
-  
-    var element2 = document.getElementById("navbarSupportedContent");
-    element2.classList.remove("active");
-  
-    var element3 = document.getElementById("navbarSupportedContent");
-    element3.classList.add("");
   }
   
   // Cuando el usuario se desplace a tantos pixeles, se habilita el boton
@@ -107,4 +101,6 @@ function closeMenu() {
     document.body.scrollTop = 10; // For Safari
     document.documentElement.scrollTop = 10; // Para Chrome, Firefox, IE y Opera
   } 
+  
+
   
