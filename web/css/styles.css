@@ -20,7 +20,6 @@
 
 /*Se importa fuente MONTSERRAT*/
 
-
 @font-face {
     font-family: monserratRegular;
     src: url(../src/fonts/Montserrat/static/Montserrat-Regular.ttf);
@@ -384,8 +383,10 @@ header video {
 
 }
 
-    @media screen and (max-width: 412px){
-        
+
+@media screen and (max-width: 412px) {
+
+/*Oculta el video en resoluciones inferiores para dar mayor espacio a la información importante*/
     header {
         visibility: none;
         -moz-backface-visibility: none;
