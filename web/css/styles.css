@@ -89,6 +89,7 @@ p, .bannerBck p{
     color: #203649;
     background-color: white;
     text-decoration: none;
+    border-color: #203649;
 }
 
 /*Usado para boto "hacia arriba"*/
@@ -281,24 +282,6 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.05;
-  z-index: 1;
-}
-
-
-
 /* MEDIA QUERIES SECTION  */
 /*  */
 /*  */
@@ -342,6 +325,9 @@ header .overlay {
     .containerDivisor{
         padding: 10px;
     }
+    header {
+        height: 250px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -371,7 +357,7 @@ header .overlay {
     .btn, .btnLight {
         width: 100%;
     }
-}
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
@@ -396,4 +382,14 @@ header .overlay {
         width: 100%;
     }
 
+}
+
+    @media screen and (max-width: 412px){
+        
+    header {
+        visibility: none;
+        -moz-backface-visibility: none;
+        -webkit-backface-visibility: none;
+        display: none;
+    }
 }
