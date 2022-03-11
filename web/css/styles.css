@@ -59,6 +59,10 @@ p, .bannerBck p{
     border:solid 0px 0px 1px 0px #e19400
 }
 
+.thisActive{
+    text-decoration: underline!important;
+}
+
 /*los links tendran el estilo de acuerdo al tema del sitio*/
 #linkPrivacy a{
     color: #203649;
@@ -199,6 +203,8 @@ h3{
     font-size: 25px;
     color: #203649;
 }
+
+
 
 /* Declara que elementos entro de la clase subTitle se alinien en bloque (uno sobre otro) y de manera centrada*/
 .subTitle img, .subTitle p{
@@ -357,6 +363,9 @@ header video {
         width: 100%;
     }
 
+    .catBtn{
+        text-decoration: none;
+    }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {

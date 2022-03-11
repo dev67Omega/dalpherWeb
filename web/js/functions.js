@@ -80,6 +80,22 @@ function closeMenu() {
     var element = document.getElementById("navbarSupportedContent");
     element.classList.remove("show");
   }
+
+  function cleanCategory() {         
+    var element1 = document.getElementById("catButton1"); element1.classList.remove("thisActive");
+    var element2 = document.getElementById("catButton2"); element2.classList.remove("thisActive");
+    var element3 = document.getElementById("catButton3"); element3.classList.remove("thisActive");
+    var element4 = document.getElementById("catButton4"); element4.classList.remove("thisActive");
+    var element5 = document.getElementById("catButton5"); element5.classList.remove("thisActive");
+    var element6 = document.getElementById("catButton6"); element6.classList.remove("thisActive");
+  }
+
+  function activeCategory(catID) {
+    cleanCategory();
+    var catPos = "catButton" + catID;
+    var catElement = document.getElementById(catPos);
+    catElement.classList.add("thisActive");
+  }
   
   // Cuando el usuario se desplace a tantos pixeles, se habilita el boton
   window.onscroll = function() {

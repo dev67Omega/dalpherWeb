@@ -70,41 +70,41 @@
         </nav>
 
         <div class="fluidServices text-secondary px-4 py-5">
-            <div class="py-5 text-white">
-              <div class="col-lg-6 mx-auto bg-dark">
-                <h1 class="display-5 fw-bold">Servicios Dalpher</h1>
-                <p class="fs-5 mb-4">Estamos convencidos de que nuestros clientes son la razón de ser de  nuestra existencia, por lo tanto nos encontramos comprometidos con ellos en proporcionarles productos que cubran sus necesidades de producción en tiempo, a un precio justo y cumpliendo con los más altos estándares de calidad.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                </div>
-              </div>
+          <div class="py-5 text-white">
+            <div class=" mx-auto bg-dark text-center">
+              <h1 class="display-5 fw-bold">Servicios Dalpher</h1>
+              <p class="fs-5 mb-4">Estamos convencidos de que nuestros clientes son la razón de ser de  nuestra existencia, por lo tanto nos encontramos comprometidos con ellos en proporcionarles productos que cubran sus necesidades de producción en tiempo, a un precio justo y cumpliendo con los más altos estándares de calidad.</p>
             </div>
+          </div>
         </div>
 
         <div class="container" >
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h2>Categorias</h2>
-
-                    <ul class="nav ">
+                    
+                  <div id="menu1" class="hmenu">
+                    <ul class="nav" id="catNav">
                         <li class="nav-item">
-                            <span class="nav-link subTitle" ng-click="filterService = {status: 'a'}">Todos los elementos</span>
+                            <span onclick="activeCategory(1)" class="nav-link catBtn subTitle" id="catButton1" ng-click="filterService = {status: 'a'}">Todos los elementos</span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link subTitle" ng-click="filterService = {type: 1}">Corte con Agua</span>
+                            <span onclick="activeCategory(2)" class="nav-link catBtn subTitle" id="catButton2" ng-click="filterService = {type: 1}">Corte con Agua</span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link subTitle" ng-click="filterService = {type: 2}">Manejo de Botella</a>
+                            <span onclick="activeCategory(3)" class="nav-link catBtn subTitle" id="catButton3" ng-click="filterService = {type: 2}">Manejo de Botella</a>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link subTitle" ng-click="filterService = {type: 3}">Moldeo de Poliuretano</span>
+                            <span onclick="activeCategory(4)" class="nav-link catBtn subTitle" id="catButton4" ng-click="filterService = {type: 3}">Moldeo de Poliuretano</span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link subTitle" ng-click="filterService = {type: 4}">Plasticos de Ingeniería</span>
+                            <span onclick="activeCategory(5)" class="nav-link catBtn subTitle" id="catButton5" ng-click="filterService = {type: 4}">Plasticos de Ingeniería</span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link subTitle" ng-click="filterService = {type: 5}">Refacciones Industriales</span>
+                            <span onclick="activeCategory(6)" class="nav-link catBtn subTitle" id="catButton6" ng-click="filterService = {type: 5}">Refacciones Industriales</span>
                         </li>
                     </ul>
+                  </div>
                 </div>
                 <div class="col-xxl-9 col-xl-9 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div id="paginatorServices" class="container">
