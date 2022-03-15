@@ -91,18 +91,18 @@
                         <li class="nav-item">
                             <span onclick="activeCategory(1)" class="nav-link thisActive subTitleServices" id="catButton1" ng-click="filterService = {status: 'a'}">Todos los elementos</span>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <span onclick="activeCategory(2)" class="nav-link  subTitleServices" id="catButton2" ng-click="filterService = {type: 1}">Corte con Agua</span>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <span onclick="activeCategory(3)" class="nav-link  subTitleServices" id="catButton3" ng-click="filterService = {type: 2}">Manejo de Botella</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <span onclick="activeCategory(4)" class="nav-link  subTitleServices" id="catButton4" ng-click="filterService = {type: 3}">Moldeo de Poliuretano</span>
                         </li>
                         <li class="nav-item">
                             <span onclick="activeCategory(5)" class="nav-link  subTitleServices" id="catButton5" ng-click="filterService = {type: 4}">Plasticos de Ingeniería</span>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <span onclick="activeCategory(6)" class="nav-link  subTitleServices" id="catButton6" ng-click="filterService = {type: 5}">Refacciones Industriales</span>
                         </li>
@@ -115,9 +115,9 @@
                           <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-model="searchName" ng-repeat="itemService in services.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))  | filter:filterService "  >
                               <div class="card cardServCat" ng-show = "itemService != null" >
                                   <img src="src/imgs/s1.jpg" onclick="openModal();currentSlide(1)"  class="card-img-top" alt="...">
-                                  <div class="card-body">
+                                  <!-- <div class="card-body">
                                       <p class="card-text">{{itemService.name}}.</p>
-                                  </div>
+                                  </div> -->
                               </div>
                           </div>
                       </div>
