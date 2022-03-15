@@ -287,6 +287,24 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
+/* ESTILOS PARA SITIO DE SERVICIOS */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+li .subTitleServices{
+    font-size: 18px;
+    color: #203649;
+}
+
+li .thisActive{
+    color: #1572c4;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #203649;
+  }
 /* MEDIA QUERIES SECTION  */
 /*  */
 /*  */
@@ -366,6 +384,7 @@ header video {
     .catBtn{
         text-decoration: none;
     }
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
@@ -398,8 +417,6 @@ header video {
 /*Oculta el video en resoluciones inferiores para dar mayor espacio a la información importante*/
     header {
         visibility: none;
-        -moz-backface-visibility: none;
-        -webkit-backface-visibility: none;
         display: none;
     }
 }

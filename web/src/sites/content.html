@@ -287,32 +287,32 @@
 </div>
 <div class="container containerDivisor" id="contact">
 </div>
-<div class="container " >
+<div class="container " ng-controller="mailCtrl">
   <div class="row">
     <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h3 class="topSpace">Contactanos</h3>
       <p class=" textBanner">La comunicacion con nuestros clientes es escencial para el logro y 
         satisfaccion de sus necesidades.
       </p> 
-      <form>
+      <form id="formContact" name="myForm" novalidate>
         <div class="mb-3 form-floating">
-          <input type="text" class="form-control" id="floatingWork" >
+          <input type="text" class="form-control" id="floatingWork1" name="nameUserContact" ng-model="user.nameUserCntact" required>
           <label for="floatingWork" >*Nombre</label>
         </div>
         <div class="mb-3 form-floating">
-          <input type="email" class="form-control" id="floatingWork" >
+          <input type="email" class="form-control" id="floatingWork2" name="mailUserContact" ng-model="user.mailUserContact" required>
           <label for="floatingWork" >*Correo Electronico</label>
         </div>
         <div class="mb-3 form-floating">
-          <input type="text" class="form-control" id="floatingWork" >
+          <input type="text" class="form-control" id="floatingWork3" name="telUserContact" ng-model="user.telUserContact" required>
           <label for="floatingWork" >*T&eacute;lefono</label>
         </div>
         <div class="mb-3 form-floating">
-          <input type="text" class="form-control" id="floatingWork" >
+          <input type="text" class="form-control" id="floatingWork4" name="empUserContact" ng-model="user.empUserContact" required>
           <label for="floatingWork" >*Empresa</label>
         </div>
           <div class="mb-3 form-">
-            <textarea class="form-control" placeholder="*Comentarios" id="comments" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="*Comentarios" id="comments" style="height: 100px"  name="bodyMsgContact" ng-model="user.bodyMsgContact" required></textarea>
             <!-- <label for="comments">*Comentarios.</label> -->
           </div>
           <div id="emailHelp" class="form-text">Los campos con (*) son obliatorios.</div>
@@ -320,7 +320,35 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label"  id="linkPrivacy" for="exampleCheck1">Acepto terminos de <a href="src/pdfs/avisoPrivacidad.pdf" target="_blank">privacidad</a></label>
         </div>
-        <button type="submit" class="btn">Enviar</button>
+        <div class=" form-group">
+          <div class="row">
+            <div class="col-2 ">
+              <button id="go" ng-disabled="myForm.$invalid" type="submit" ng-click="sendMail(user)" class="btn btn-primary btn-lg btn-block">Enviar</button>
+            </div>
+            <div class="col-10">
+              <div class="alert alert-danger" role="alert" ng-show="myForm.nameUserContact.$dirty && myForm.nameUserContact.$invalid">
+                <span  ng-show="myForm.nameUserContact.$error.required">Ingrese su nombre.</span>
+              </div>
+              <div class="alert alert-danger" role="alert" ng-show="myForm.telUserContact.$dirty && myForm.telUserContact.$invalid">
+                <span ng-show="myForm.telUserContact.$error.required">Ingrese su número teléfonico.</span>
+              </div>
+              <div class="alert alert-danger" role="alert" ng-show="myForm.mailUserContact.$dirty && myForm.mailUserContact.$invalid">
+                <span ng-show="myForm.mailUserContact.$error.required">Ingrese una dirección de correo.</span>
+                <span ng-show="myForm.mailUserContact.$error.email">Ingrese una dirección de correo valida.</span>
+              </div>
+              <div class="alert alert-danger" role="alert" ng-show="myForm.bodyMsgContact.$dirty && myForm.bodyMsgContact.$invalid">
+                <span ng-show="myForm.bodyMsgContact.$error.required">Escriba su mensaje.</span>
+              </div>
+              <div id="para" class="alert alert-success" role="success" ng-show="myForm.$submitted" >
+                <span >Gracias su mensaje se envio exitosamente</span>
+              </div>
+              <!-- <div class="alert alert-danger text-center" >
+                <button type="button" class="close" ng-click="clearMsg()"><span aria-hidden="true">&times;</span></button>
+                {{ errorMsg }}
+              </div> -->
+            </div>
+          </div>
+        </div>
       </form>
     </div>
     <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
