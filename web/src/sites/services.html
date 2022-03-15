@@ -114,11 +114,26 @@
                       <div class="row">
                           <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-model="searchName" ng-repeat="itemService in services.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))  | filter:filterService "  >
                               <div class="card cardServCat" ng-show = "itemService != null" >
-                                  <img src="src/imgs/s1.jpg" onclick="openModal();currentSlide(1)"  class="card-img-top" alt="...">
-                                  <!-- <div class="card-body">
-                                      <p class="card-text">{{itemService.name}}.</p>
-                                  </div> -->
+                                  <img src="src/imgs/{{itemService.status}}.jpg" onclick="openModal();currentSlide(1)"  class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                      <p class="card-text">{{itemService.status}}</p>
+                                  </div>
                               </div>
+                              <!-- <div id="thyModal" class="modal">
+                                <span class="close cursor" onclick="closeModal()">&times;</span>
+                                <div class="modal-content">
+                                  <div class="thySlides">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="src/imgs/s1.jpg">
+                                  </div>
+                                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              
+                                  <div class="caption-container">
+                                    <p id="caption"></p>
+                                  </div>
+                                </div>
+                              </div> -->
                           </div>
                       </div>
                       <pagination total-items="totalItems"
@@ -134,36 +149,7 @@
         </div>
         <!-- <span>Number of services: {{result.length}}</span>  -->
         <!--Lighbox-->
-        <div id="thyModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-              <div class="thySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="src/imgs/s1.jpg">
-              </div>
-          
-              <div class="thySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="src/imgs/s2.jpg">
-              </div>
-          
-              <div class="thySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="src/imgs/s3.jpg">
-              </div>
-              
-              <div class="thySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="src/imgs/s2.jpg">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-            </div>
-          </div>
+
 
           <a onclick="topFunction()" class="button" id="topBtn" title="Regresar a arriba">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
