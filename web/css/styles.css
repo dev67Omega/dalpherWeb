@@ -38,7 +38,7 @@
 body{
     letter-spacing: 2px;
     background: rgb(241, 238, 238);
-    /* background-image: url("../src/imgs/bck1.jpg");  */
+    background-image: url("../src/imgs/bck1.jpg"); 
     height: 100%; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
