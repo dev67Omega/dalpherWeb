@@ -12,49 +12,28 @@ app.config(function($routeProvider) {
     })
 });
 app.controller('loginController', ['$scope', '$filter', function ($scope, $filter) {
-  
-  
-  // $scope.curPage = 1,
-  // $scope.itemsPerPage = 3,
-  // $scope.maxSize = 5;
-    
-  //   this.items = services;
-  
-  
-  // $scope.numOfPages = function () {
-  //   return Math.ceil(services.length / $scope.itemsPerPage);
-    
-  // };
-  
-  //   $scope.$watch('curPage + numPerPage', function() {
-  //   var begin = (($scope.curPage - 1) * $scope.itemsPerPage),
-  //   end = begin + $scope.itemsPerPage;
-    
-  //   $scope.filteredItems = services.slice(begin, end);
-  // });
-
-    
+     
   $scope.services = [
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 1 de manejo de botella',"srcimg":"s3"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 2 de manejo de botella',"srcimg":"s1"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 1 de manejo de botella',"srcimg":"s3"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 2 de manejo de botella',"srcimg":"s1"},         
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 1 de manejo de botella',"srcimg":"s3"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 2 de manejo de botella',"srcimg":"s1"},         
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 1 de manejo de botella',"srcimg":"s3"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 2 de manejo de botella',"srcimg":"s1"},         
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 1 de manejo de botella',"srcimg":"s3"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"name":'producto 2 de manejo de botella',"srcimg":"s1"}, 
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 1 de refacciones industriales',"srcimg":"s3"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s1"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 2 de refacciones industriales',"srcimg":"s2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"name":'producto 3 de refacciones industriales',"srcimg":"s3"}
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb1"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb2"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb3"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb4"},         
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb5"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb6"},         
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb7"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb8"},         
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb9"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb10"}, 
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri1"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri2"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri3"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri4"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri5"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri6"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri7"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri8"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri9"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri10"}
     ];
 
     $scope.viewby = 20;
@@ -76,10 +55,6 @@ app.controller('loginController', ['$scope', '$filter', function ($scope, $filte
     $scope.currentPage = 1; //reset to first paghe
   }
 }]);
-
-
-
-
 
 // SECCION DE FUNCIONES JS
 

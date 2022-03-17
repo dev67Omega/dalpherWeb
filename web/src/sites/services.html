@@ -114,13 +114,14 @@
                       <div class="row" data-toggle="modal" data-target="#{{x.img}}">
                           <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-model="searchName" ng-repeat="itemService in services.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))  | filter:filterService "  >
                               <div class="card cardServCat" ng-show = "itemService != null" >
-                                  <img src="src/imgs/{{itemService.srcimg}}.jpg" class="card-img-top" alt="">
+                                  <img style="width:auto; height:250px;" src="src/imgs/{{itemService.srcimg}}.jpg" class="card-img-top" alt="">
                               </div>
-                              <div class="modal fade" id="{{x.img}}" tabindex="-1" role="dialog" aria-labelledby="{{x.srcimg}}" aria-hidden="true">
+                              <div class="modal fade" id="{{x.srcimg}}" tabindex="-1" role="dialog" aria-labelledby="{{x.srcimg}}" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                   <div class="modal-content">
                                     <div class="modal-body">
-                                      <img class="card-img-top image" src="src/imgs/{{itemService.srcimg}}.jpg" alt="{{x.name}}" >
+                                      <img class="card-img-top image" src="src/imgs/{{itemService.srcimg}}.jpg" alt="{{x.srcimg}}" >
+                                      {{x.category}}
                                     </div>
                                     <div class="modal-footer">
                                       <!-- <p>{{x.mail}}</p> -->
