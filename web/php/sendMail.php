@@ -7,7 +7,7 @@ $mailPeople = $user->mailUserContact;
 $phonePeople = $user->telUserContact;
 $msgPeople = $user->bodyMsgContact;
 
-$to = "umgp150992@gmail.com";
+$to = "ventas@dalpher.com";
 $subject = "Formulario contacto";
 $txt = " Correo de: ".$namePeople."\n"." Teléfono: ".$phonePeople."\n"." Descripción del mensaje: ".$msgPeople;
 $headers  = "From: ".$mailPeople;

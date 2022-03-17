@@ -164,7 +164,7 @@
         por lo tanto nos encontramos comprometidos con ellos en proporcionarles productos que cubran 
         sus necesidades de producci&oacute;n en tiempo, a un precio justo y cumpliendo con los m&aacute;s altos est&aacute;ndares de calidad. 
       </p> 
-      <a type="button" class="btn">Contactanos</a>
+      <a ahref="#contact" type="button" class="btn">Contactanos</a>
     </div>
   </div>
 </div>
@@ -279,7 +279,20 @@
         sin&oacute;nimo de CALIDAD Y CONFIANZA.
       </p> 
       <a type="button" class="btn">Certificaciones y Recomendaciones</a>
-
+      <!-- Modal -->
+      <div class="modal fade" id="modalCertification" tabindex="-1" aria-labelledby="modalCertification" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCertification">Recomendaciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="card-img-top image" src="src/imgs/{{itemService.srcimg}}.jpg" alt="{{x.srcimg}}" >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -292,7 +305,8 @@
       <p class=" textBanner">La comunicacion con nuestros clientes es escencial para el logro y 
         satisfaccion de sus necesidades.
       </p> 
-      <form id="formContact" name="myForm" novalidate>
+      <!-- action="mailto:ventas@dalpher.com" -->
+      <form id="formContact" name="myForm"  novalidate>
         <div class="mb-3 form-floating">
           <input type="text" class="form-control" id="floatingWork1" name="nameUserContact" ng-model="user.nameUserCntact" required>
           <label for="floatingWork" >*Nombre</label>
@@ -321,7 +335,8 @@
         <div class=" form-group">
           <div class="row">
             <div class="col-2 ">
-              <button id="go" ng-disabled="myForm.$invalid" type="submit" ng-click="sendMail(user)" class="btn btn-primary btn-lg btn-block">Enviar</button>
+              <!-- ng-click="sendMail(user)" -->
+              <button id="go" ng-disabled="myForm.$invalid" ng-click="sendMail(user)"  class="btn btn-primary btn-lg btn-block">Enviar</button>
             </div>
             <div class="col-10">
               <div class="alert alert-danger" role="alert" ng-show="myForm.nameUserContact.$dirty && myForm.nameUserContact.$invalid">

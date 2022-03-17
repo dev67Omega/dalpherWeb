@@ -3,7 +3,9 @@ var app = angular.module("myApp", ['ngRoute','ui.bootstrap']);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "src/sites/content.html"
+        templateUrl : "src/sites/content.html",
+        controller: 'mailCtrl'
+
     })
     .when("/servCat", {
         templateUrl : "src/sites/services.html",
@@ -11,6 +13,8 @@ app.config(function($routeProvider) {
 
     })
 });
+
+
 app.controller('loginController', ['$scope', '$filter', function ($scope, $filter) {
      
   $scope.services = [
