@@ -14,26 +14,26 @@ app.config(function($routeProvider) {
 app.controller('loginController', ['$scope', '$filter', function ($scope, $filter) {
      
   $scope.services = [
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb1"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb2"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb3"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb4"},         
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb5"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb6"},         
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb7"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb8"},         
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb9"}, 
-        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb10"}, 
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri1"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri2"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri3"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri4"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri5"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri6"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri7"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri8"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri9"},
-        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri10"}
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb1", "nameModal":"nma"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb2", "nameModal":"nmb"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb3", "nameModal":"nmc"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb4", "nameModal":"nmd"},         
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb5", "nameModal":"nme"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb6", "nameModal":"nmf"},         
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb7", "nameModal":"nmg"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb8", "nameModal":"nmh"},         
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb9", "nameModal":"nmi"}, 
+        {"type":2, "status":'a', "category": 'Manejo de Botella',"srcimg":"mb/prdmb10", "nameModal":"nmj"}, 
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri1", "nameModal":"nmk"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri2", "nameModal":"nml"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri3", "nameModal":"nmm"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri4", "nameModal":"nmn"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri5", "nameModal":"nmo"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri6", "nameModal":"nmp"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri7", "nameModal":"nmq"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri8", "nameModal":"nmr"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri9", "nameModal":"nms"},
+        {"type":5, "status":'a', "category": 'Refacciones Industriales',"srcimg":"ri/prdri10", "nameModal":"nmt"}
     ];
 
     $scope.viewby = 20;

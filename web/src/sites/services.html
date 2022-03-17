@@ -111,12 +111,12 @@
                 </div>
                 <div class="col-xxl-9 col-xl-9 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div id="paginatorServices" class="container">
-                      <div class="row" data-toggle="modal" data-target="#{{x.img}}">
+                      <div class="row" >
                           <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-model="searchName" ng-repeat="itemService in services.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))  | filter:filterService "  >
                               <div class="card cardServCat" ng-show = "itemService != null" >
-                                  <img style="width:auto; height:250px;" src="src/imgs/{{itemService.srcimg}}.jpg" class="card-img-top" alt="">
+                                  <img style="width:auto; height:250px;" src="src/imgs/{{itemService.srcimg}}.jpg" data-bs-toggle="modal" data-bs-target="#{{itemService.nameModal}}" class="card-img-top" alt="">
                               </div>
-                              <div class="modal fade" id="{{x.srcimg}}" tabindex="-1" role="dialog" aria-labelledby="{{x.srcimg}}" aria-hidden="true">
+                              <div class="modal fade" id="{{itemService.nameModal}}" tabindex="-1" role="dialog" aria-labelledby="{{itemService.nameModal}}" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                   <div class="modal-content">
                                     <div class="modal-body">
