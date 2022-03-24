@@ -22,27 +22,31 @@
 
 @font-face {
     font-family: monserratRegular;
-    src: url(../src/fonts/Montserrat/static/Montserrat-Regular.ttf);
+    src: url(../src/fonts/AvenirBold/avbf.otf);
   }
   
 @font-face {
     font-family: monserratSemiBold;
-    src: url(../src/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+    src: url(../src/fonts/AvenirBold/avbf.otf);
   }
   
 @font-face {
     font-family: monserratBold;
-    src: url(../src/fonts/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(../src/fonts/AvenirBold/avbf.otf);
   }
   
 body{
     letter-spacing: 2px;
-    background: rgb(241, 238, 238);
-    background-image: url("../src/imgs/bck1.jpg"); 
+    background: rgb(251, 248, 248);
+    /* background-image: url("../src/imgs/bck1.jpg");  */
     height: 100%; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+a{
+    text-decoration: none;
 }
 
 p, .bannerBck p{
@@ -266,6 +270,15 @@ iframe{
     height: 100%;
 }
 
+.modal-body p{
+    color: #353f52;
+    text-align: left;
+}
+
+.modal-body ul{
+    color: #353f52;
+    text-align: left;
+}
 
 /***************************************
     Estilos usados para Video
@@ -274,6 +287,7 @@ iframe{
 video{
     width:100%;
     height:auto;
+    margin-top: 58px;
 }
 
 /* ESTILOS PARA SITIO DE SERVICIOS */
